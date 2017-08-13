@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="playground">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body style="padding-top: 70px;">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Playground</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a ui-sref="application({ id: 1 })">Application</a></li>
+        </ul>
+        <h3 ng-show="header.currentApplication" ng-controller="headerController as header" style="width: 100%; text-align: center;">{{header.currentApplication.OperatingEntity.Name}}</h1>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div ui-view></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/angular.ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+  <script src="app/playground.js"></script>
+  <script src="app/states.js"></script>
+  <script src="app/shared/header.controller.js"></script>
+  <script src="app/application/application.factory.js"></script>
+  <script src="app/application/application.factory.cache.js"></script>
+  <script src="app/application/application.controller.js"></script>
+  <script src="app/application/capture/capture.controller.js"></script>
+  <script src="app/application/capture/capture.legal-entity.controller.js"></script>
+  <script src="app/application/capture/capture.related-entities.controller.js"></script>
+  <script src="app/application/application.dashboard.controller.js"></script>
+</body>
+
+</html>

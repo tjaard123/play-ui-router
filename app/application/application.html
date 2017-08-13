@@ -1,0 +1,18 @@
+﻿<div class="row">
+  <div class="col-md-3">
+    <div class="well">
+      <h2>Application</h2>
+      <h4>{{application.currentApplication.OperatingEntity.Name}}</h4>
+      <h4>{{application.currentApplication.AFNumber}}</h4>
+      <ul>
+        <li><a ui-sref="application.capture">Capture</a></li>
+        <li><a ui-sref="application.dashboard">Dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="well">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>

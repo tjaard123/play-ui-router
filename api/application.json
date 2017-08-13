@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "AFNumber": "AF00001",
+  "OperatingEntity": {
+      "Name": "ABC Farming",
+      "BPNumber": "900100"
+  },
+  "RelatedEntities": [
+    { "Name": "Trust", "BPNumber": "900200" },
+    { "Name": "Partnership", "BPNumber": "900300" }
+  ]
+}
